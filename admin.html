@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="bg-[hsl(222,62%,29%)] sticky top-0 z-index-2">
+      <div class="ml-auto mr-auto max-w-[1200px] w-[1200px] h-[50px] flex"> 
+        <div class="float-left pr-3.5 w-3/10 text-left mt-1 flex w-[270px]">
+          <a href="./index.html" class="w-full inline-block">
+            <img
+              class="max-w-full h-11 anhlogo"
+              src="./imgs/logo_boutique.png"
+              alt=""
+            />
+          </a>
+          <!-- <i class="fa-solid fa-bars text-[#ffffff80] items-center flex"></i> -->
+        </div>
+        <form class="mt-2 ml-auto w-[250px] h-[30px]">
+          <div class="bg-white rounded-md h-full w-full relative">
+            <input
+              type="text"
+              class="flex-auto w-[197px] h-full ml-1 absolute"
+              style="outline: none"
+              placeholder="Search for..."
+            />
+            <button
+              class="w-11 bg-[#0d6efd] right-0 rounded border-[1px] border-indigo-100 absolute"
+            >
+              <i class="text-xl fa-solid fa-magnifying-glass text-white"></i>
+            </button>
+          </div>
+        </form>
+        <ul
+          class="text-white flex justify-center items-center ml-6 gap-2 cursor-pointer user"
+        >
+          <li class="relative">
+            <i class="fa-solid fa-user m-1"></i>
+            <i class="fa-solid fa-sort-down text-xs"></i>
+            <ul
+              class="absolute bg-white text-[#212529] text-base pt-1 pb-1 right-0 w-[160px] rounded mt-2 hidden user-group"
+              style="border: 1px solid rgba(0, 0, 0, 0.15)"
+            >
+              <li class="">
+                <a href="" class="block pt-1 pb-1 pl-3 pr-3 user-item"
+                  >Settings
+                </a>
+              </li>
+              <li class="">
+                <a href="" class="block pt-1 pb-1 pl-3 pr-3 user-item"
+                  >Activity Log</a
+                >
+              </li>
+              <li>
+                <div class="h-[1px] w-full bg-black mt-2 mb-2"></div>
+              </li>
+              <li class="">
+                <a href="" class="block pt-1 pb-1 pl-3 pr-3 user-item"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="ml-auto mr-auto max-w-[1200px] w-[1200px] mt-0 mb-0">
+      <div class="mt-6">
+        <span class="text-4xl font-semibold">Admin</span>
+        <div class="m-3 ml-0">
+          <span class="opacity-60">Quản trị viên</span>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-3">
+            <div class="bg-[#e33131] rounded pt-2 pb-2">
+              <div class="text-center text-white text-xl">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="text-center font-normal text-lg text-white">120</div>
+              <div class="text-center font-normal text-lg text-white">
+                Đơn hàng
+              </div>
+            </div>
+          </div>
+          <div class="col l-3">
+            <div class="bg-[#f0d019] rounded pt-2 pb-2">
+              <div class="text-center text-white text-xl">
+                <i class="fa-regular fa-comments"></i>
+              </div>
+              <div class="text-center font-normal text-lg text-white">120</div>
+              <div class="text-center font-normal text-lg text-white">
+                Bình luận
+              </div>
+            </div>
+          </div>
+          <div class="col l-3">
+            <div class="bg-[#25d125] rounded pt-2 pb-2">
+              <div class="text-center text-white text-xl">
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <div class="text-center font-normal text-lg text-white">120</div>
+              <div class="text-center font-normal text-lg text-white">
+                Người dùng
+              </div>
+            </div>
+          </div>
+          <div class="col l-3">
+            <div class="bg-[#297bfd] rounded pt-2 pb-2">
+              <div class="text-center text-white text-xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="text-center font-normal text-lg text-white">120</div>
+              <div class="text-center font-normal text-lg text-white">
+                Tìm kiếm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid wide mt-5">
+      <div class="row">
+        <div class="col l-6">
+          <div class="rounded" style="border: 1px solid #ccc">
+            <div class="bg-[#ccc] p-2">
+              <i class="fa-solid fa-chart-area ml-4"></i>
+              Doanh thu theo ngày
+            </div>
+            <div class="p-4">
+              <canvas
+                id="myAreaChart"
+                style="width: 559px; height: 235px"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col l-6">
+          <div class="rounded" style="border: 1px solid #ccc">
+            <div class="bg-[#ccc] p-2">
+              <i class="fa-solid fa-chart-column ml-4"></i>
+              Doanh thu theo tháng
+            </div>
+            <div class="p-4">
+              <canvas
+                id="myBarChart"
+                style="width: 559px; height: 235px"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid wide mt-6">
+      <div class="row">
+        <div class="col l-12">
+          <div class="rounded" style="border: 1px solid #ccc">
+            <div class="bg-[#ccc] p-2">
+              <i class="fa-solid fa-table"></i>
+              Lịch sử đặt hàng
+            </div>
+            <div class="p-4">
+              <div class="flex justify-between">
+                <label class="">
+                  <select class="p-2" style="border: 1px solid black">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                  </select>
+                  Mục hiển thị mỗi trang
+                </label>
+                <div class="rounded relative" style="border: 1px solid black">
+                  <input
+                    type="text"
+                    class="p-2 rounded"
+                    placeholder="Tìm kiếm"
+                  />
+                  <div class="absolute top-[6px] right-[10px]">
+                    <i class="fa-solid fa-x text-[#0d6efd] text-sm"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 ml-2 mr-2">
+                <table class="w-full">
+                  <thead>
+                    <tr>
+                      <th
+                        class="w-[20%] relative"
+                        style="
+                          text-align: left;
+                          border-bottom: 1px solid #d9d9d9;
+                        "
+                      >
+                        <button class="datatable-sorter">Tên</button>
+                      </th>
+                      <th
+                        class="w-[30%] relative"
+                        style="
+                          text-align: left;
+                          border-bottom: 1px solid #d9d9d9;
+                        "
+                      >
+                        <button class="datatable-sorter">Tỉnh</button>
+                      </th>
+                      <th
+                        class="w-[15.5%] relative"
+                        style="
+                          text-align: left;
+                          border-bottom: 1px solid #d9d9d9;
+                        "
+                      >
+                        <button class="datatable-sorter">Địa chỉ</button>
+                      </th>
+                      <th
+                        class="w-[13.5%] relative"
+                        style="
+                          text-align: left;
+                          border-bottom: 1px solid #d9d9d9;
+                        "
+                      >
+                        <button class="datatable-sorter">Ngày đặt</button>
+                      </th>
+                      <th
+                        class="w-[12.5%] relative"
+                        style="
+                          text-align: left;
+                          border-bottom: 1px solid #d9d9d9;
+                        "
+                      >
+                        <button class="datatable-sorter">Ngày giao</button>
+                      </th>
+                      <th
+                        class="w-[12.5%] relative"
+                        style="
+                          text-align: left;
+                          border-bottom: 1px solid #d9d9d9;
+                        "
+                      >
+                        <button class="datatable-sorter">Số tiền</button>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-index="1">
+                      <td>Nguyễn Văn a</td>
+                      <td>Tp.HCM</td>
+                      <td>Quận 1</td>
+                      <td>20/11/2022</td>
+                      <td>24/11/2022</td>
+                      <td>170.000đ</td>
+                    </tr>
+                    <tr data-index="2">
+                      <td>Trần Văn Bé</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 2</td>
+                      <td>23/10/2022</td>
+                      <td>03/11/2022</td>
+                      <td>345,000đ</td>
+                    </tr>
+                    <tr data-index="3">
+                      <td>Nguyễn Văn Thơ</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 3</td>
+                      <td>23/11/2022</td>
+                      <td>24/11/2022</td>
+                      <td>972.000đ</td>
+                    </tr>
+                    <tr data-index="4">
+                      <td>Nguyễn Tiến Đạt</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 4</td>
+                      <td>22/02/2023</td>
+                      <td>24/02/2023</td>
+                      <td>222.000đ</td>
+                    </tr>
+                    <tr data-index="5">
+                      <td>Lê Văn Đạt</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 5</td>
+                      <td>24/02/2023</td>
+                      <td>27/02/2023</td>
+                      <td>823.000đ</td>
+                    </tr>
+                    <tr data-index="6">
+                      <td>Hữu Tủ Lượng</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 6</td>
+                      <td>28/02/2023</td>
+                      <td>02/03/2023</td>
+                      <td>341.000đ</td>
+                    </tr>
+                    <tr data-index="7">
+                      <td>Tủ Lượng Vô Biên</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 7</td>
+                      <td>25/04/2023</td>
+                      <td>27/05/2023</td>
+                      <td>867.000đ</td>
+                    </tr>
+                    <tr data-index="8">
+                      <td>Bất Tủ Trên Bàn</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 8</td>
+                      <td>25/04/2023</td>
+                      <td>29/04/2023</td>
+                      <td>987.000đ</td>
+                    </tr>
+                    <tr data-index="9">
+                      <td>Nhậu Là Có Mặt</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 9</td>
+                      <td>24/05/2023</td>
+                      <td>26/05/2023</td>
+                      <td>755.000đ</td>
+                    </tr>
+                    <tr data-index="10">
+                      <td>Tủ Lượng Vô Biên</td>
+                      <td>TP.HCM</td>
+                      <td>Quận 10</td>
+                      <td>29/07/2023</td>
+                      <td>04/08/2023</td>
+                      <td>523.000đ</td>
+                    </tr>
+                  </tbody>
+                  <tfoot
+                    style="
+                      border-bottom: 1px solid #ccc;
+                      border-top: 1px solid #ccc;
+                    "
+                  >
+                    <tr>
+                      <th>Tên</th>
+                      <th>Tỉnh</th>
+                      <th>Địa chỉ</th>
+                      <th>Ngày đặt</th>
+                      <th>Ngày giao</th>
+                      <th>Số tiền</th>
+                    </tr>
+                  </tfoot>
+                </table>
+                <div class="flex justify-between mt-3">
+                  <div class="">Trang 1</div>
+                  <div class="">
+                    <ul class="flex">
+                      <li class="ml-1">
+                        <button class="py-[6px] px-[12px] bg-[#ccc] text-xs">
+                          1
+                        </button>
+                      </li>
+                      <li class="ml-1">
+                        <button class="py-[6px] px-[12px] bg-[#ccc] text-xs">
+                          2
+                        </button>
+                      </li>
+                      <li class="ml-1">
+                        <button class="py-[6px] px-[12px] bg-[#ccc] text-xs">
+                          3
+                        </button>
+                      </li>
+                      <li class="ml-1">
+                        <button class="py-[6px] px-[12px] bg-[#ccc] text-xs">
+                          4
+                        </button>
+                      </li>
+                      <li class="ml-1">
+                        <button class="py-[6px] px-[12px] bg-[#ccc] text-xs">
+                          5
+                        </button>
+                      </li>
+                      <li class="ml-1">
+                        <button class="py-[6px] px-[12px] bg-[#ccc] text-xs">
+                          6
+                        </button>
+                      </li>
+                      <div class="text-[8px] items-center flex ml-1">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./char_Area.js"></script>
+  <script src="./BarChart.js"></script>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class=" top-0 h-15">
+        <div
+          class=" bg-[hsl(222,62%,29%)] w-full h-full max-h-16 justify-center text-center fixed z-50"
+        >
+          <div class=" relative py-1 text-center mb-0 mt-0 ml-auto mr-auto max-w-1200 h-full ">
+            <div class=" block min-w-1250 language-selector top-2/4">
+              <a href="" class="  ">
+                <img src="https://u-shop.vn/images/flags/us.png" alt="" class="">
+              </a>
+          </div>
+            <div class="float-left pr-3.5 w-3/10 text-left mt-1">
+              <a href="./index.html" class="w-full inline-block">
+                <img
+                  class="max-w-full h-11 anhlogo"
+                  src="./imgs/logo_boutique.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="float-left w-3/10 relative h-11">
+              <form class="w-full h-full mt-1.5">
+                <span class="w-full h-full">
+                  <input
+                    class="h-full w-full rounded-md text-sm p-2 font-medium text-[#00000080]"
+                    stype="text"
+                    placeholder="Tìm kiếm sản phẩm"
+                  />
+                  <button class="absolute w-11 h-full bg-[#eee] right-0 rounded f">
+                    <i class="text-2xl opacity-50 fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </span>
+              </form>
+            </div>
+            <div class="float-right w-4/10 ">
+              <div class="justify-end flex ">
+                <ul class="text-white flex gap-4 items-center">
+                  <li class="p-2cursor-pointer hover:text-orange-400">
+                    <a href="" class="">
+                      <i class="block text-2xl w-full -mb-1 fa-solid fa-location-dot"> </i>
+                      <span class="font-sans text-xs font-bold"
+                        >Tp. Hồ Chí Minh</span
+                      >
+                    </a>
+                  </li>
+                  <li class="cursor-pointer hover:text-orange-400">
+                    <a href="" class="">
+                      <i class="block text-2xl w-full -mb-1 fa-regular fa-user"></i>
+                      <span class="font-sans text-xs font-bold"
+                        >
+                        Đăng nhập/Đăng ký
+                    </span
+                      >
+                    </a>
+                  </li>
+                  </li>
+                  <div class="cart text-white relative ">
+                    <div class=" block ">
+                      <a href="" class="">
+                        <i class=" ico-cart text-xl -mb-2 fa-solid fa-basket-shopping "></i>
+                        <span class="absolute text-xs -top-1 m-1 h-4 w-4 bg-[#ff7a00] text-center font-semibold rounded-full ">0</span>
+                        <span class=" cart-label inline-block w-full font-bold  text-xs ">0đ</span>
+                      </a>
+                    </div>
+                    <div class="mini-shopping absolute  bg-white right-2  z-50 js-add-cart">
+                      <div class="rounded ">
+                        <p class=" mini-shopping-title font-sans font-bold text-sm ">Bạn không có sản phẩm nào trong giỏ hàng của bạn.</p>
+                      </div>
+                      <div class="mini-shopping__scroll  overflow-y-scroll   ">
+                      </div>
+                      <div class=" flyout-lower sticky top-auto  js-total">
+                          <!-- <div class="count   ">
+                            <a href="" class="text-sm font-semibold">1 sản phẩm</a>
+                          </div>
+                          <div class="totals text-xs font-semibold text-[#8c8c8c] ">Tạm tính 
+                            <strong class="text-[#1c3879] text-base">238.000 đ</strong>
+                          </div>
+                          <div class="button  ">
+                            <input type="button" value="Đặt hàng" class="cart-button cursor-pointer"> 
+                        </div> -->
+                     </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class=" w-full mb-0 mt-0 ml-auto mr-auto  max-w-1140  gap-3 flex flex-col  ">
+        <div class="mt-6 justify-center ">
+              <ul class="container flex items-center gap-3">
+                <li class=" flex items-center  "> 
+                  <a href="" class="block text-sm font-normal text-[#1c3879] "> Trang Chủ</a>
+                    <i class="delimiter ml-3 fa-solid fa-chevron-right"></i>
+                </li>
+                <li class=" flex items-center "> 
+                  <a href="" class="block text-sm  font-normal text-[#1c3879] "> Comfort</a>
+                    <i class="delimiter ml-3 fa-solid fa-chevron-right"></i>
+                </li>
+                <li class=" flex items-center "> 
+                    <a href="" class="block text-sm  font-normal text-[#1c3879] "> HÁI LỘC ĐẦU NĂM - TẶNG TRĂM LÌ XÌ</a>
+                    <i class="delimiter ml-3 fa-solid fa-chevron-right"></i>
+                </li>
+                <li class=" flex items-center "> 
+                    <span  class="block text-sm  font-normal  "> Nước xả vải Comfort Thiên nhiên Thanh khiết Hoa Anh Đào & Đào tươi 3l</span>
+                </li>
+              </ul>
+        </div>
+        <div class=" bg-white mt-4 rounded-t-[20px] ">
+          <div class="js-product row ">
+            <div class="p-4 gird__column-6 ">
+              <div class="flex items-center justify-center zoom">
+                  <div class="">
+                      <div class="relative text-center">
+                        <a href="#" class="picture-link w-full h-auto " >
+                          <img src="https://u-shop.vn/images/thumbs/0013505_nuoc-xa-vai-comfort-luu-huong-sau-huong-vuon-xuan-38l_500.png" alt="" class="w-full object-scale-down">
+                          <div class="">
+                            <img src="./imgs/0015330_hero 5.5 v2.png" alt="" class="picture-link-img">
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="gird__column-6 p-4 gap-y-3 flex flex-col  notice">
+              <h1 class=" text-lg text-[#1c3879] font-semibold">
+                  Nước xả vải Comfort Thiên nhiên Thanh khiết Hoa Anh Đào & Đào tươi 3l
+              </h1>
+              <div class="flex gap-3 text-sm font-medium">
+                  <div class="">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span class="">0 đánh giá</span>
+                  <span class="">Số lượng đã bán: 51</span>
+              </div>
+              <div class="">
+                  <span class="text-[#c0202e] font-semibold text-lg">
+                      238.000
+                  </span>
+                  <div class="text-xs">
+                      hoặc trả trước 
+                      <span class="font-extrabold">0 đ</span>
+                      <span class="text-[#50bef0]">Fundiin</span>
+                      <a href="" class="">Tìm hiểu (?)</a>
+                      <p class="">
+                          <i>Áp dụng cho đơn hàng dưới 500.000 đ</i>
+                      </p>
+                  </div>
+              </div>
+              <div class="flex font-normal text-base">
+                  <div class=" ">Thương hiệu</div>
+                  <div class="ml-4">
+                      <div class="">
+                          <a href="" class="text-[#1c3879]">Comfort</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="line-clamp-5 text-sm">
+                  RA MẮT NƯỚC XẢ COMFORT THIÊN NHIÊN THANH KHIẾT MỚI - HƯƠNG HOA ANH ĐÀO & ĐÀO TƯƠI 
+                  <br />
+                  Nước xả làm mềm vải Comfort Thiên Nhiên Thanh Khiết chính là lựa chọn hoàn hảo cho những ai yêu thích hương thơm nhẹ nhàng, thanh dịu và không nồng gắt trên áo quần. Với tinh dầu nước hoa 100% thiên nhiên được chưng cất tỉ mỉ, Comfort mang đến hương thơm lấy cảm hứng từ Hoa Anh Đào & Đào Tươi mọng nước, tỏa hương tươi mát trong lành, không nồng gắt và bền lâu trên quần áo suốt 100 giờ.
+                  
+              </div>
+              <div class="">
+                  <span class="">
+                      <strong class="text-[#c0202e]">27</strong>
+                      sản phẩm còn lại
+                  </span>
+              </div>
+              <div class="flex gap-2">
+                  <div class="add-to-cart-qty-wrapper">
+                      <div class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                      </div>
+                      <input type="text" value=" 1" class="qty-input">
+                      <div class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                      </div>
+                  </div>
+                  <input type="button" value="Mua Ngay" class="btn add-to-cart-button ">
+                  <div class="flex gap-2">
+                      <button class="button-2">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button class="button-2">
+                          <i class="fa-regular fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          </div>
+         
+        </div>
+        <div class=" bg-white mb-4 ">
+            <div class="p-4">
+                <div class="text-lg font-semibold text-[#1C3879]">
+                    <strong>Chi tiết sản phẩm</strong>
+                </div>
+                <div class="pl-6 row flex-wrap text-sm font-medium ">
+                    <div class="gird__column-6 mt-1">Tổ chức chịu trách nhiệm về hàng hóa</div>
+                    <div class="gird__column-6 mt-1">
+                        <a href="" class="text-[#1C3879]">Công ty TNHH Linh Phin</a>
+                    </div>
+                    <div class="gird__column-6 mt-1">Nhóm sản phẩm</div>
+                    <div class="gird__column-6 mt-1 text-[#1C3879] text-base-">
+                        <a href="" class="">Trang chủ</a>
+                        <i class="text-xs fa-solid fa-chevron-right"></i>
+                        <a href="" class="">Unilever</a>
+                        <i class="text-xs fa-solid fa-chevron-right"></i>
+                        <a href="" class="">
+                            HÁI LỘC ĐẦU NĂM - TẶNG TRĂM LÌ XÌ
+                        </a>
+                    </div>
+                    <div class="gird__column-6 mt-1">Thương hiệu</div>
+                    <div class="gird__column-6 mt-1">
+                        <a href="" class="">Comfort</a>
+                    </div>
+                    <div class="gird__column-6 mt-1">Dung tích/khối lượng</div>
+                    <div class="gird__column-6 mt-1">3l</div>
+                    <div class="gird__column-6 mt-1">Xuất xứ</div>
+                    <div class="gird__column-6 mt-1">Việt Nam</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="bg-white ">
+            <div class="p-4">
+                <div class="text-lg font-semibold text-[#1C3879]">
+                    <strong>Mô tả sản phẩm</strong>
+                </div>
+                <div class="text-[#656464] text-base font-normal line-clamp-5 ">
+                    <strong>* ƯU ĐIỂM NỔI BẬT</strong>
+                    :
+                    <br>
+                    - Hương thơm thiên nhiên mang cảm hứng từ Hoa Anh Đào và Đào Tươi thanh ngọt, dịu nhẹ.
+                    <br>
+                    - Tinh dầu 100% thiên nhiên*, hương hoa cỏ và trái cây cao cấp.
+                    <br>
+                    - Lưu hương bến lâu trên áo quần đến 100 giờ^.
+                    <br>
+                    - Công thức dưỡng mềm vải ưu việt từ Comfort.
+                    <br>
+                    <br>
+                    <strong>* HƯỚNG DẪN SỬ DỤNG</strong>
+                    <br>
+                    <strong>GIẶT TAY:</strong>
+                    <br>
+                    Dùng lượng tương đương 1/2 nắp (nắp 40 ml) cho 10-15 chiếc quần áo.
+                    <br>
+                    Hòa Comfort Thiên Nhiên Thanh Khiết vào nước xả cuối, đảm bảo lượng nước đủ ngập hết quần áo.
+                    <br>
+                    Ngâm quần áo 10-15 phút. Sau đó vắt và phơi khô.
+                    <br>
+                    <br>
+                    <strong>GIẶT MÁY:</strong>
+                    <br>
+                    Đổ Comfort Thiên Nhiên Thanh Khiết vào ngăn chứa nước xả vải. 
+                    <br>
+                    Dùng lượng tương đương 1 nắp (nắp 40 ml) cho một lần giặt thông thường.
+                    <br>
+                    Điều chỉnh lượng dùng tùy vào số lượng và chất liệu quần áo.
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="underline cursor-pointer text-center text-[#1C3879]">Xem thêm</div>
+            </div>
+        </div>
+        <div class="bg-white  rounded-b-[20px]">
+            <div class="p-3 ">
+                <div class="text-lg font-semibold text-[#1C3879]">
+                    <strong>Đánh giá sản phẩm</strong>
+                </div>
+                <div class="px-6 flex gap-16 mt-4 mb-3">
+                    <div class="">
+                        <div class="text-[64px]">
+                            <i class="text-[#ffce31] fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-sm">
+                            <span class="text-black">0 đánh giá</span>
+                        </div>
+                    </div>
+                    <div class="vr"></div>
+                    <div class="flex-col flex gap-1 ">
+                        <div class="flex gap-2 items-center text-base">
+                            <span>5</span>
+                            <i class="text-[#ffce31] fa-solid fa-star"></i>
+                            <div class="w-[300px] max-w-[300px]  h-4 bg-[#EAE3D2] rounded-[20px]">
+                                <div class="w-0"></div>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                        <div class="flex gap-2 items-center text-base">
+                            <span>4</span>
+                            <i class="text-[#ffce31] fa-solid fa-star"></i>
+                            <div class="w-[300px] max-w-[300px]  h-4 bg-[#EAE3D2] rounded-[20px]">
+                                <div class="w-0"></div>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                        <div class="flex gap-2 items-center text-base">
+                            <span>3</span>
+                            <i class="text-[#ffce31] fa-solid fa-star"></i>
+                            <div class="w-[300px] max-w-[300px]  h-4 bg-[#EAE3D2] rounded-[20px]">
+                                <div class="w-0"></div>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                        <div class="flex gap-2 items-center text-base">
+                            <span>2</span>
+                            <i class="text-[#ffce31] fa-solid fa-star"></i>
+                            <div class="w-[300px] max-w-[300px]  h-4 bg-[#EAE3D2] rounded-[20px]">
+                                <div class="w-0"></div>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                        <div class="flex gap-2 items-center text-base">
+                            <span>1</span>
+                            <i class="text-[#ffce31] fa-solid fa-star"></i>
+                            <div class="w-[300px] max-w-[300px]  h-4 bg-[#EAE3D2] rounded-[20px]">
+                                <div class="w-0"></div>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white  mt-8  relative">
+        <div class=" mb-0 mt-0 ml-auto mr-auto  max-w-1140  text-left ">
+          <div class="w-full h-5"></div>
+          <div class="row pt-10 pb-20 ">
+            <div class="gird__column-3 text-sm border-r-[1px] border-[#1c3879] border-dashed  pt-8">
+              <div class="text-[#5b5a5a] ">
+                <p class="  "> CÔNG TY TRÁCH NHIỆM HỮU HẠN LINH PHIN – Đối tác vận hành trực tuyến chính thức của Unilever</p>
+                <br>
+              </div>
+              <div class=" gap-2 flex flex-col ">
+                <div class="text-[#5b5a5a] text-sm">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span class=""> Số 155B đường Trần Phú, phường Nam Viêm, thành phố Phúc Yên, tỉnh Vĩnh Phúc</span>
+                </div>
+                <div class=" text-sm text-[#5b5a5a]">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="">Hotline: 1900 636982</span>
+                  <span class="">(8:00 - 21:00, T2-T7)</span>
+                </div>
+                <div class=" text-[#5b5a5a] text-sm">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="">dichvukhachhang@u-shop.vn</span>
+                </div>
+                <div class="text-[#5b5a5a] text-sm">
+                  <span class="">Giấy chứng nhận đăng ký kinh doanh số 2500677040 do Sở kế hoạch và đầu tư tỉnh Vĩnh Phúc đăng ký thay đổi lần thứ 2 ngày 26 tháng 12 năm 2023</span>
+                </div>
+                <div class="">
+                  <a href="" class="max-w-28">
+                    <img src="http://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png" alt="" class="w-28">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="gird__column-3 ml-6">
+              <div class=" mb-4 text-[#999595] text-sm">Phương thức thanh toán</div>
+              <div class="flex gap-2 justify-start ">
+                <img src="./imgs/momo.svg" alt="" class=" w">
+                <img src="./imgs/mastercard.svg" alt="" class="">
+                <img src="./imgs/visa.svg" alt="" class="">
+                <img src="./imgs/fundiin.svg" alt="" class="">
+              </div>
+              <div class="mt-5">
+                <ul class=" text-sm ml-7 ">
+                  <li class="p-2">
+                    <a href="" class=" text-[#999595]">Giới thiệu</a>
+                  </li>
+                  <li class="p-2">
+                    <a href="" class="text-[#999595]">Câu hỏi thường gặp</a>
+                  </li>
+                  <li class="p-2">
+                    <a href="" class="text-[#999595]">Điều khoản sử dụng</a>
+                  </li>
+                  <li class="p-2">
+                    <a href="" class="text-[#999595]">Chính sách đổi trả hàng</a>
+                  </li>
+                  <li class="p-2">
+                    <a href="" class="text-[#999595]">Vận chuyển và Giao nhận</a>
+                  </li>
+                  <li class="p-2">
+                    <a href="" class="text-[#999595]">Chính sách bảo mật</a>
+                  </li>
+                  <li class="p-2">
+                    <a href="" class="text-[#999595]">Khả năng truy cập</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="gird__column-3">
+              <div class="mb-4 text-[#999595] text-sm">Đơn vị vận chuyển</div>
+              <div class="flex gap-2 justify-start">
+                <img src="./imgs/ninjavan.svg" alt="" class="">
+                <img src="./imgs/vnpost.svg" alt="" class="">
+              </div>
+            </div>
+        </div>
+        <div class=" absolute right-0 bottom-0 " >
+          <img src="./imgs/footer_logo.svg" alt="" class="">
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  <script src="./API.js"></script>
+</html>
